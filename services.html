@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - Hope Haven Children's Home</title>
+ <link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h2 class="logo">Hope Haven</h2>
+        <div class="buttons">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="About us.html">About Us</a></li>
+                <li><a href="Contact us.html">Contact Us</a></li>
+            </ul>
+        </div>
+      
+    </nav>
+  </header>
+  <main>
+    <section class="services-intro">
+      <h1>Our Services</h1>
+      <p>
+        At Hope Haven Children's Home, we provide care and support to children
+        by meeting their basic needs, supporting their education, protecting
+        their health, and helping them grow in a safe and loving environment.
+      </p>
+    </section>
+
+    <section class="services-container">
+
+  
+  <div class="service-row">
+    <div class="service-text">
+      <h3>Shelter and Basic Care</h3>
+      <p>
+        We provide children with a safe place to live, clothing, hygiene items,
+        supervision, and daily care to ensure they feel protected and supported.
+      </p>
+    </div>
+
+    <div class="service-image">
+      <img src="images/shelter.jpeg" alt="Children in a safe and caring home environment">
+    </div>
+  </div>
+
+  <!-- Service 2 -->
+  <div class="service-row reverse">
+    <div class="service-text">
+      <h3>Feeding and Nutrition Program</h3>
+      <p>
+        We offer daily meals and nutrition support to help children grow healthy
+        and strong. Food donations also help us keep this program running.
+      </p>
+    </div>
+
+    <div class="service-image">
+      <img src="images/feeding.jpg" alt="Healthy meals prepared for children">
+    </div>
+  </div>
+
+  <!-- Service 3 -->
+  <div class="service-row">
+    <div class="service-text">
+      <h3>Education Support</h3>
+      <p>
+        We support children through school enrollment, learning materials,
+        tutoring, mentorship, and guidance so they can build a better future.
+      </p>
+    </div>
+
+    <div class="service-image">
+      <img src="images/education.webp" alt="Children studying and learning together">
+    </div>
+  </div>
+
+  <!-- Service 4 -->
+  <div class="service-row reverse">
+    <div class="service-text">
+      <h3>Health Care and Counselling Support</h3>
+      <p>
+        We help children access basic medical care, emotional counselling,
+        hygiene education, HIV counselling, and referrals to health facilities
+        when needed.
+      </p>
+    </div>
+
+    <div class="service-image">
+      <img src="images/health.webp" alt="Health care and counselling support for children">
+    </div>
+  </div>
+
+  <!-- Service 5 -->
+  <div class="service-row">
+    <div class="service-text">
+      <h3>Adoption and Family Reintegration Support</h3>
+      <p>
+        We support family tracing, reintegration, and adoption guidance through
+        proper child protection and legal procedures.
+      </p>
+    </div>
+
+    <div class="service-image">
+      <img src="images/adoption.jpeg" alt="Family support and child reintegration">
+    </div>
+  </div>
+
+</section>
+</main>
+  <footer>
+    <p>&copy; 2026 Hope Haven Children's Home. All rights reserved.</p>
+  </footer>
+<script>
+    const serviceRows = document.querySelectorAll('.service-row');
+
+    window.addEventListener('scroll', function () {
+      serviceRows.forEach(function (row) {
+        const rowPosition = row.getBoundingClientRect().top;
+        const screenPosition = window.innerHeight - 100;
+
+        if (rowPosition < screenPosition) {
+          row.classList.add('show');
+        }
+      });
+    });
+  </script>
+  </body>
+</html>
