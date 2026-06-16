@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fdfefe;
+}
+
+/* Header / Navigation */
+header {
+  background: #2e86c1;
+  padding: 15px 8%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f4d03f;
+}
+
+/* Hero Section */
+.hero{
+    min-height:100vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("images/children.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.hero h1 {
+  font-size: 55px;
+  margin-bottom: 15px;
+  color: #f4d03f;
+}
+
+.hero h3 {
+  font-size: 24px;
+  color: #f4d03f;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #f4d03f;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #f4d03f;
+  color: #333;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #ffd700;
+}
+
+.secondary {
+  background: #58d68d;
+  color: white;
+}
+
+.secondary:hover {
+  background: #45c27a;
+}
+
+/* Welcome Section */
+.welcome{
+    padding:80px 15%;
+    text-align:center;
+    background:#FDFEFE;
+}
+
+.welcome-text{
+    max-width:900px;
+    margin:auto;
+}
+
+.welcome-text h2{
+    color:#2E86C1;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.welcome-text p{
+    font-size:20px;
+    line-height:1.8;
+}
+
+/* Mission Section */
+.mission {
+  padding: 70px 10%;
+  text-align: center;
+  background: #f4f6f7;
+}
+
+.mission h2 {
+  color: #2e86c1;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.mission p {
+  max-width: 800px;
+  margin: auto;
+  font-size: 17px;
+}
+
+/* Impact Preview */
+.impact-preview {
+  padding: 80px 10%;
+  text-align: center;
+  background: #fdfefe;
+}
+
+.impact-preview h2 {
+  color: #2e86c1;
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+.impact-preview p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  font-size: 17px;
+}
+
+/* Footer */
+footer {
+  background: #2e86c1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .welcome {
+    flex-direction: column;
+    text-align: center;
+  }
+}
