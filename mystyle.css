@@ -48,15 +48,21 @@ nav a:hover {
   color: #f4d03f;
 }
 
-/* Services Introduction Section */
+
 .services-intro {
-  padding: 80px 15%;
+  padding: 120px 15%;
   text-align: center;
-  background: #fdfefe;
+
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/services_bg.jpeg");
+
+  background-size: cover;
+  background-position: center;
 }
 
 .services-intro h1 {
-  color: #2e86c1;
+  color: #f4d03f;
   font-size: 42px;
   margin-bottom: 20px;
 }
@@ -66,6 +72,7 @@ nav a:hover {
   margin: auto;
   font-size: 20px;
   line-height: 1.8;
+  color: white;
 }
 
 /* Services Container */
